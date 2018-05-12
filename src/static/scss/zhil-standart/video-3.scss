@@ -1,0 +1,43 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-video-3__video {
+  margin-bottom: 30px;
+}
+
+.it-video-3__bottom {
+  padding: 25px 7%;
+}
+
+.it-video-3__desc p ,
+.it-video-3__desc  {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.it-video-3__desc p:first-child {
+  margin-top: 0;
+}
+
+.it-video-3__desc p  {
+  margin-bottom: 30px;
+}
+
+.it-video-3__desc a {
+  color: $main-color;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.it-video-3__buttons {
+  max-width: 330px;
+  @include phones {
+    max-width: 100%;
+  }
+}
+
+.it-video-3__buttons .it-video-3__btn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

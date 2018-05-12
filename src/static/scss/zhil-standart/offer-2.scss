@@ -1,0 +1,100 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-offer-2 {
+  background: url("../img/zhil-standart/offer-2/bg.jpg") no-repeat top left;
+  @include laptop {
+    background: #E8EDFC;
+  }
+}
+
+
+.it-offer-2__wrap {
+  padding: 4% 0;
+}
+
+.it-offer-2__half--top {
+  @include laptop {
+    margin-bottom: 40px;
+  }
+}
+
+.it-offer-2__half--bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.it-offer-2__title {
+  color: #000000;
+  font-size: rem(48px);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.it-offer-2__desc {
+  margin-bottom: 40px;
+  font-size: 24px;
+
+}
+
+.it-offer-2__list {
+  margin: 0;
+  padding: 0;
+  @include row-flex();
+  overflow: hidden;
+  display: flex;
+  margin-bottom: -40px;
+}
+
+.it-offer-2__item {
+  list-style-type: none;
+  padding-left: 0;
+  @include col();
+  @include size(4);
+ @include size-xs(12);
+  text-align: center;
+  min-width: 165px;
+  margin-bottom: 40px;
+
+}
+
+.it-offer-2__img-box {
+  border-radius: 50%;
+  background-color: #37C386;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.it-offer-2__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.it-offer-2__img-title {
+  font-size: 14px;
+  color: #333333;
+  padding-top: 41%;
+  line-height: 1.6;
+  @include laptop {
+    padding-top: 20px;
+  }
+}
+
+.it-offer-2__buttons {
+  max-width: 270px;
+  @include phones {
+    max-width: 100%;
+  }
+}
+
+.it-offer-2 .it-offer-2__btn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

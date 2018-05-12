@@ -1,0 +1,30 @@
+section.it-callback
+	.it-container
+		.it-callback__wrap
+			.it-callback__outer-wrap.it-callback__outer-wrap--left
+				h3.it-callback__input-title  Свяжитесь с нами
+				.it-callback__subtitle
+					| Мы расскажем подробно
+					| как работает программное обеспечение
+			.it-callback__outer-wrap.it-callback__outer-wrap--center
+				form.it-callback-callback__form.it-form--hide.it-form-ajax(name='asujs_callback-1', method='post', action='')
+					.it-callback__input-wrap
+						.it-callback__half
+							input.it-callback__input(type='text', name='NAME', maxlength='200', value='', placeholder='Ваше имя', required='')
+						.it-callback__half
+							input.it-callback__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required='', data-mask='phone')
+						.it-callback__half.it-callback__buttons
+							button.it-btn.it-callback__btn(type='submit')
+								img.it-callback__btn-img(src='<?php echo get_template_directory_uri() ?>/img/callback/1.png', alt='')
+					.it-form__success
+						p Спасибо!
+						p Ваша заявка принята
+					.it-checkbox-wrap.it-callback__checkbox-wrap
+						label.it-checkbox
+							input.it-checkbox__default(type='checkbox', name='AGREE', checked='')
+							span.it-checkbox__pseudo
+							span.it-checkbox__text Подтверждаю свое согласие на обработку персональных данных
+					input(type='hidden', name='callback_form')
+			.it-callback__outer-wrap.it-callback__outer-wrap--right
+				.it-callback__time Пн. – Пт.: с 06:00 до 19:00 по МСК
+				.it-callback__phone  8 (800) 550-07-35
