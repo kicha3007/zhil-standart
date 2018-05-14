@@ -130,12 +130,12 @@
   margin-bottom: 40px;
 }
 
-.it-all--indent.it-all--indent-hide {
+.it-all--indent-hide {
   @include phones {
-    display: none;
+    margin-bottom: 50px;
   }
-}
 
+}
 
 .it-all-title__text {
   position: relative;

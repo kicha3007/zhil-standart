@@ -3,14 +3,15 @@
 @import "../smart-grid";
 
 .it-offer-2 {
-  background: url("../img/zhil-standart/offer-2/bg.jpg") no-repeat top left;
+  background: url("../img/zhil-standart/offer-2/bg.jpg") no-repeat top center;
+  background-size: cover;
   @include laptop {
     background: #E8EDFC;
   }
 }
 
 .it-offer-2__wrap {
-  padding: 3% 0;
+  padding: 3.5% 0;
 }
 
 .it-offer-2__half--top {
@@ -32,8 +33,9 @@
 .it-offer-2__title {
   color: #000000;
   font-size: rem(48px);
-  margin-bottom: 25px;
+  margin: 0 0 25px;
   font-weight: 700;
+  padding: 0;
 }
 
 .it-offer-2__desc {

@@ -45,6 +45,7 @@ $(function () {
             //window.scrollTo(0,this.offsetTop - 200);
         });
         $this.parent().find("[data-it-sign]").toggleClass("active");
+        $this.toggleClass("active");
 
         /* $(this).parent().find("[]").toggle();
          $(this).parent().find("[]").toggle();*/

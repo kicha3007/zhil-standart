@@ -38,7 +38,7 @@
   @include size(3);
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   @include phones {
     display: none;
   }

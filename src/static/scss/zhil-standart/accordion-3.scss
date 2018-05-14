@@ -5,8 +5,7 @@
 
 .it-accordion-3__wrap {
   margin: 0;
-  padding-right: 20px;
-  padding-left: 0;
+  padding: 0;
 }
 
 .it-accordion-3__item {
@@ -14,7 +13,7 @@
 }
 
 .it-accordion-3__toggle {
-  padding: 15px 20px;
+  padding: 15px 60px 15px 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -22,9 +21,17 @@
   position: relative;
   background-color: $main-color;
   margin-bottom: 20px;
+  @include phones {
+    padding-left: 10px;
+  }
+
 }
 
-.it-accordion-3__toggle:last-child {
+.it-accordion-3__toggle.active {
+  margin-bottom: 0;
+}
+
+.it-accordion-3__wrap  .it-accordion-3__item:last-child  .it-accordion-3__toggle{
   margin-bottom: 0;
 }
 
@@ -32,17 +39,23 @@
   font-size: 16px;
   font-weight: 700;
   flex-grow: 1000;
-  flex-basis: 400px;
   color: #FFFFFF;
+  flex-basis: 160px;
+  margin: 0;
+  padding: 0;
+  @include phones {
+    font-size: 14px;
+  }
 }
 
 
 .it-accordion-3__sign-wrap {
   position: absolute;
-  top: 5px;
+  top: 50%;
   right: 5px;
   width: 50px;
   height: 50px;
+  margin-top: -25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +106,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px  40px  40px;
+
 }
 
 .it-accordion-3__desc {
@@ -103,7 +116,7 @@
   font-size: 1rem;
   flex-basis: 400px;
   flex-grow: 1000;
-  padding-right: 5%;
+  padding-right: 0;
 }
 
 
@@ -115,6 +128,9 @@
   justify-content: center;
   align-items: center;
   margin-right: 35px;
+  @include phones {
+    margin-right: 10px;
+  }
 }
 
 .it-accordion-3__img {
@@ -130,10 +146,11 @@
 
 .it-accordion-3__desc li {
   list-style-type: none;
-  padding-left: 0;
+  padding: 3% 7%;
   font-size: 14px;
   color: #333333;
-  margin-bottom: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: none;
 }
 
 .it-accordion-3__desc li:last-child {
