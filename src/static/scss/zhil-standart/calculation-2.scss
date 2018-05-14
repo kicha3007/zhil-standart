@@ -16,6 +16,22 @@
 .it-calculation-2__top-half--left {
   @include size(9);
   @include size-xs(12);
+  position: relative;
+}
+
+.it-calculation-2__top-half--left:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 80px;
+	width: 1px;
+	height: 180%;
+   background-color: $main-color;
+  z-index: 9999;
+  @include desktop {
+    display: none;
+  }
 }
 
 .it-calculation-2__top-half--right {
@@ -57,15 +73,15 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 0 -10px -20px;
+  margin: 0 -25px -20px;
   overflow: hidden;
 }
 
 .it-calculation-2-form__half {
-  max-width: 340px;
+  max-width: 300px;
   flex-grow: 1000;
   flex-basis: 10px;
-  margin: 0 10px 20px;
+  margin: 0 25px 20px;
   position: relative;
 
 }
@@ -152,7 +168,7 @@
   font-size: rem(20px);
   font-weight: 700;
   color: $main-color;
-  padding: 7px 20px;
+  padding: 7px 20px 7px 0;
   @include tablets {
     font-size: rem(16px);
   }
@@ -179,4 +195,37 @@
   @include phones {
     max-width: 100%;
   }
+}
+
+.it-calculation-2-form__input--icon {
+  position: relative;
+}
+
+.it-calculation-2-form__input-title-text--icon:before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 23px;
+	right: -32px;
+	width: 12px;
+	height: 2px;
+    margin-top: -1px;
+  background-color: #000000;
+}
+
+.it-calculation-2-form__input-title-text--icon:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  right: -32px;
+  width: 12px;
+  height: 2px;
+  margin-top: -1px;
+  background-color: #000000;
+}
+
+.it-calculation-2__outer-wrap {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 7% 40px 7%;
 }

@@ -5,41 +5,62 @@
 .it-advantages-2__wrap {
   margin: 0;
   padding: 6% 0 0;
-  @include row-flex();
-  justify-content: space-between;
-  @include tablets {
-    justify-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  //@include tablets {
+  //  justify-content: center;
+  //}
+  margin-bottom: 25px;
 
 }
 
 .it-advantages-2__item {
   list-style-type: none;
-  padding-left: 0;
-  @include col();
-  @include size(4);
-  @include size-sm(6);
-  @include size-xs(12);
-  padding-bottom: 9%;
+  border: 1px solid #CCCCCC;
   text-align: center;
-  max-width: 280px;
+  max-width: 391px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;;
 }
 
 .it-advantages-2__img-box {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  max-width: 60px;
+  align-items: center;
+  max-width: 58px;
   width: 100%;
-  max-height: 50px;
-  margin-bottom: 15px;
+  height: 58px;
+  margin-bottom: 10px;
+  min-height: 36px;
+  position: relative;
+}
+
+.it-advantages-2__img-box:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58px;
+  height: 58px;
+  background: url("../img/zhil-standart/advantages-2/decoration.png") no-repeat center;
 }
 
 .it-advantages-2__img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.it-advantages-2__img--indent {
+  margin-right: -10px;
 }
 
 .it-advantages-2__title {
@@ -49,4 +70,9 @@
 
 .it-advantages-2__link-wrap {
   text-align: center;
+}
+
+.it-advantages-2__content {
+  max-width: 275px;
+  width: 100%;
 }
